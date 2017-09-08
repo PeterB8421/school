@@ -4,6 +4,12 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			.projekt{
+				border-left: solid #070 4px;
+				padding-left: 5px;
+			}
+		</style>
 		<title>Školní projekty</title>
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -19,11 +25,26 @@
 			<h1 class="text-center">Školní prjekty</h1>
 		</header>
 		<main>
-			Vytváření stránek, počkejte prosím...
+			<div class="container">
+				<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+					<h2>Přehled projektů</h2>
+					<div class="projekt">
+						<h3>8. 9. 2017</h3>
+						<article>
+							Vytvoření webové stránky pro dokumentaci, zároveň s opakováním používání služby Git.
+						</article>
+					</div>
+				</div>
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+					<h2>Zajímavé odkazy</h2>
+					<a href="www.w3schools.com">www.w3schools.com</a>
+					<p>Reference HTML, JS, CSS, PHP a dalších technologií</p>
+				</div>
+			</div>
 		</main>
-		<footer>
+		<footer class="jumbotron">
 			<hr>
-			<p>
+			<p class="text-center">
 				&copy; 2017 Petr Balok
 			</p>
 		</footer>
