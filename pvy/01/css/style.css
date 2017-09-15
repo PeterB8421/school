@@ -1,4 +1,9 @@
 footer{
     background-color: black;
     color: white;
+    font-size: 2em;
+}
+img{
+    padding-bottom: 5px;
+    border-bottom: solid 2px black;
 }
