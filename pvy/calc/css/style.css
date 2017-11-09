@@ -1,0 +1,25 @@
+html{
+    background-color: #777;
+}
+main{
+    background-color: white;
+    font-size: 15pt;
+}
+#obal{
+    width: 960px;
+    margin: 0 auto;
+    background-color: white;
+}
+.sCtverec, .sObdelnik, .sKrychle, .sKvadr{
+    margin-left: 20px;
+}
+#sSquare, #sRectangle, #sCube, #sBlock{
+    margin-left: 40px;
+}
+.vysledek{
+    text-align: center;
+    font-size: 12pt;
+}
+#ctvObsCount{
+    margin-bottom: 20px;
+}

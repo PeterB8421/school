@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Kalkulačka</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="favicon.ico">
+        <!-- Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <h1 class="text-center">Kalkulačka</h1>
+        <div id="obal">
+            <main class="container">
+                <div class="col-sm-12">
+                    <!-- Obsahy -->
+                        <img src="img/chevron-right.png" alt="Chevron" id="sImg">
+                        <a class="obsah" href="#">Obsah</a>
+                        <div id="obsahy">
+                            <!-- Čtverec -->
+                            <img class="sCtverec" src="img/chevron-right.png" alt="Chevron">
+                            <a class="sCtverec" href="#">Čtverec</a>
+                            <div id="sSquare">        
+                                <form role="form">
+                                    <legend>Obsah čtverce</legend>
+                                    <div class="col-sm-2">
+                                        <label for="ctvStrana_a">Strana a =</label>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <div class="col-sm-2">
+                                            <div class="form-group">                                                
+                                                <input name="ctvStrana_a" type="number" class="form-control" id="ctvStrana_a" value="1" min="0">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2 col-offset-2">
+                                            <div class="form-group">
+                                                <select name="jednotka" id="sCtvJedn" class="form-control">
+                                                    <option value="km">km</option>
+                                                    <option value="m" selected>m</option>
+                                                    <option value="dm">dm</option>
+                                                    <option value="cm">cm</option>
+                                                    <option value="mm">mm</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div id="vysObshCtv">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="col-sm-4">
+                                      <input type="button" class="btn btn-primary" id="ctvObsCount" value="Vypočítat"></input>
+                                    </div>
+                                </form>
+                                <img src="img/ctverec.jpg" alt="Čtverec" class="img-responsive">
+                            </div>    
+                        <br>
+                        <!-- Obdélník -->
+                        <img class="sObdelnik" src="img/chevron-right.png" alt="Chevron">
+                        <a class="sObdelnik" href="#">Obdélník</a>
+                        <div id="sRectangle">        
+                                <form role="form">
+                                    <legend>Obsah obdélníku</legend>
+                                    <div class="col-sm-2">
+                                        <label for="obdStrana_a">Strana a =</label>
+                                        <br>
+                                        <br>
+                                        <label for="obdStrana_b">Strana b =</label>
+                                    </div>
+                                    <div class="row">
+                                    <div class="col-sm-8">
+                                        <div class="col-sm-2">
+                                            <div class="form-group">                                                
+                                                <input type="number" class="form-control" id="obdStrana_a" value="1" min="0">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2 col-offset-2">
+                                            <div class="form-group">
+                                                <select name="jednotka" id="sObdJedn" class="form-control">
+                                                    <option value="km">km</option>
+                                                    <option value="m" selected>m</option>
+                                                    <option value="dm">dm</option>
+                                                    <option value="cm">cm</option>
+                                                    <option value="mm">mm</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        
+                                        <div class="col-sm-2 col-offset-2">
+                                            <div class="form-group">                                                
+                                                <input type="number" class="form-control" id="obdStrana_b" value="2" min="0">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2 col-offset-2">
+                                            <div id="jednObd">
+
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div id="vysObshObd">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                      <input type="button" class="btn btn-primary text-left" id="obdObsCount" value="Vypočítat"></input>
+                                </form>
+                                <img src="img/obdelnik.png" alt="Obdélník" class="img-responsive">
+                            </div>
+                            <br>
+                            <!-- Krychle -->
+                            <img class="sKrychle" src="img/chevron-right.png" alt="Chevron">
+                            <a class="sKrychle" href="#">Krychle</a>
+                            <div id="sCube">        
+                                <form role="form">
+                                    <legend>Povrch krychle</legend>
+                                    <div class="col-sm-2">
+                                        <label for="ctvStrana_a">Strana a =</label>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <div class="col-sm-2">
+                                            <div class="form-group">                                                
+                                                <input name="krychStrana_a" type="number" class="form-control" id="krychStrana_a" value="1" min="0">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2 col-offset-2">
+                                            <div class="form-group">
+                                                <select name="jednotka" id="sKrychJedn" class="form-control">
+                                                    <option value="km">km</option>
+                                                    <option value="m" selected>m</option>
+                                                    <option value="dm">dm</option>
+                                                    <option value="cm">cm</option>
+                                                    <option value="mm">mm</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div id="vysObshKrych">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="col-sm-4">
+                                      <input type="button" class="btn btn-primary" id="krychObsCount" value="Vypočítat"></input>
+                                    </div>
+                                </form>
+                                <img src="img/krychle.png" alt="Krychle" class="img-responsive">
+                            </div>
+                            <br>
+                            <!-- Kvádr -->   
+                            <img class="sKvadr" src="img/chevron-right.png" alt="Chevron">
+                            <a class="sKvadr" href="#">Kvádr</a>
+                            <div id="sBlock">        
+                                    <form role="form">
+                                        <legend>Povrch kvádru</legend>
+                                        <div class="col-sm-2">
+                                            <label for="kvadrStrana_a">Strana a =</label>
+                                            <br>
+                                            <br>
+                                            <label for="kvadrStrana_b">Strana b =</label>
+                                            <br>
+                                            <br>
+                                            <label for="kvadrStrana_c">Strana c =</label>
+                                        </div>
+                                        <div class="row">
+                                        <div class="col-sm-8">
+                                            <div class="col-sm-2">
+                                                <div class="form-group">                                                
+                                                    <input type="number" class="form-control" id="kvadrStrana_a" value="1" min="0">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2 col-offset-2">
+                                                <div class="form-group">
+                                                    <select name="jednotka" id="sKvadrJedn" class="form-control">
+                                                        <option value="km">km</option>
+                                                        <option value="m" selected>m</option>
+                                                        <option value="dm">dm</option>
+                                                        <option value="cm">cm</option>
+                                                        <option value="mm">mm</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            </div>
+                                            
+                                            <div class="col-sm-2 col-offset-2">
+                                                <div class="form-group">                                                
+                                                    <input type="number" class="form-control" id="kvadrStrana_b" value="2" min="0">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2 col-offset-2">
+                                                <div class="jednKvadr">
+    
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2 col-offset-2">
+                                                    <div class="form-group">                                                
+                                                        <input type="number" class="form-control" id="kvadrStrana_c" value="3" min="0">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-2 col-offset-2">
+                                                    <div class="jednKvadr">
+        
+                                                    </div>
+                                                </div>
+                                            <div class="col-sm-2">
+                                                <div id="vysObshKvadr">
+    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br>
+                                          <input type="button" class="btn btn-primary text-left" id="kvadrObsCount" value="Vypočítat"></input>
+                                    </form>
+                                    <img src="img/obdelnik.png" alt="Obdélník" class="img-responsive">
+                                </div>  
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/jQuery.js"></script>
+    </body>
+</html>
