@@ -5,6 +5,7 @@ $(document).ready(function () {
     $("#sSquare").hide();
     $("#sRectangle").hide();
     $("#sCube").hide();
+    $("#sBlock").hide();
     $(".obsah").click(function (e) { 
         e.preventDefault();
         $("#obsahy").toggle(100);
@@ -20,6 +21,10 @@ $(document).ready(function () {
     $(".sKrychle").click(function (e) { 
         e.preventDefault();
         $("#sCube").toggle(100);
+    });
+    $(".sKvadr").click(function (e) { 
+        e.preventDefault();
+        $("#sBlock").toggle(100);
     });
     $(".objem").click(function(e){
         e.preventDefault();
