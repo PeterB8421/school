@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Řetězce v JS</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <header class="jumbotron">
+            <h1 class="text-center">Řetězce v JS</h1>
+        </header>
+        <main class="container">
+            <form action="" class="form-horizontal" role="form">
+                <div class="form-group">
+                    <legend>Textový editor</legend>
+                </div>
+                <div class="form-group">
+                    <label for="editor" 
+                    class="col-sm-2">Editor</label>
+                    <div class="col-sm-10">
+                         <textarea id="editor" class="form-control" 
+                         rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="oldString" 
+                        class="col-sm-2">Co nahradit</label>
+                    <div class="col-sm-10">
+                        <input type="text" id="oldString" 
+                        class="form-control" value="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="newString" 
+                            class="col-sm-2">Čím nahradit</label>
+                    <div class="col-sm-10">
+                        <input type="text" id="newString" 
+                            class="form-control" value="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-10 col-sm-offset-2">
+                        <input type="button" class="btn btn-primary" 
+                        id="submit" value="Potvrdit">
+                    </div>
+                </div>
+            </form>
+            <h3>Info o textu</h3>
+            <div id="info"></div> 
+            <h3>Převod textu</h3>
+            <h4>Velká písmena</h4>
+            <div id="upperCase"></div> 
+            <hr> 
+            <h4>Malá písmena</h4>          
+            <div id="lowerCase"></div> 
+            <hr>
+            <h4>Zašifrovaný text</h4>
+            <div id="crypt"></div>
+            <hr>
+            <h4>Nahrazený text</h4>          
+            <div id="replaced"></div>            
+        </main>
+        <footer class="container-fluid">
+            <hr>
+            <p>&copy; 2017 - IT2 - PVY</p>
+        </footer>
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
