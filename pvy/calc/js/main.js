@@ -38,6 +38,19 @@ function obsahKvadru(){
     document.getElementById('vysObshKvadr').innerHTML = '<p class="vysledek">Obsah kvádru je: <b>'+vysledek+ ' ' +jednotka+'</b><sup>2</sup>.';
     return;
 }
+function randGen(){
+    var cislo = Math.ceil(Math.random()*20);
+    document.getElementById('vypisNah').innerHTML = '<b class="text-center">'+cislo+'</b>';
+    return;
+}
+function doplnJednotku(z, i){
+    var jedn;
+    console.log(z);
+    console.log(i);
+    jedn = document.getElementById(z).value;
+    document.getElementById(i).innerHTML = '<p>'+jedn+'</p>';
+    return;
+}
 document.getElementById('ctvObsCount').addEventListener('click', function(){
     obsahCtverec();
 });
@@ -56,7 +69,16 @@ document.getElementById('krychObsCount').addEventListener('click', function(){
 document.getElementById('kvadrObsCount').addEventListener('click', function(){
     obsahKvadru();
 })
-var obdJedn = '';
-obdJedn = document.getElementById('sObdJedn').value;
-document.getElementById('jednObd').innerHTML = '<p>'+obdJedn+'</p>';
-
+document.getElementById('genNrCount').addEventListener('click', function(){
+    randGen();
+})
+document.getElementById('sObdJedn').addEventListener('mouseleave', function(){
+    doplnJednotku('sObdJedn', 'obdJedn');
+})
+document.getElementById('sKvadrJedn').addEventListener('mouseleave', function(){
+    doplnJednotku('sKvadrJedn', 'jednKvadr1');
+    doplnJednotku('sKvadrJedn', 'jednKvadr2');
+})
+doplnJednotku('sObdJedn', 'jednObd');
+doplnJednotku('sKvadrJedn', 'jednKvadr1');
+doplnJednotku('sKvadrJedn', 'jednKvadr2');
