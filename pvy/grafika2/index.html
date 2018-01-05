@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>JavaScript - grafika</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="jumbotron">
+            <h1 class="text-center">JavaScript - grafika</h1>
+        </header>
+        <main class="container">            
+            <div class="row">
+                <div class="col-sm-9">
+                    <h2>Grafické plátno - canvas</h2>            
+                    <canvas id="canvas" width="800" height="600"></canvas>            
+                </div>
+                <div class="col-sm-3">
+                    <h3>Objekty</h3>
+                    <div class="form-group">                        
+                        <label for="list">Seznam objektů</label>
+                        <select id="list" class="form-control"></select>                        
+                    </div>
+                    <div class="form-group">                        
+                        <label for="shape">Tvar</label>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="shape" id="circle" value="circle" checked="checked">
+                                Kruh
+                            </label>
+                            <label>
+                                <input type="radio" name="shape" id="rectangle" value="rectangle">
+                                Obdélník
+                            </label>
+                            <label>
+                                <input type="radio" name="shape" id="triangle" value="triangle">
+                                Trojúhelník
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">                        
+                        <label for="caption">Popisek</label>                        
+                        <input type="text" class="form-control" id="caption" placeholder="Zadej popisek">
+                    </div>
+                    <div class="form-group">                        
+                        <label>x:<input type="number" class="form-control" id="x" value="400" min="0" max="800"></label>
+                        <label>y:<input type="number" class="form-control" id="y" value="300" min="0" max="600"></label>
+                    </div>
+                    <div class="form-group">                        
+                        <button type="button" class="btn btn-success" id="new">Nový</button>
+                        <button type="button" class="btn btn-danger" id="delete">Smazat</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="container-fluid">
+            <hr>
+            <p>&copy; 2017 - SŠPU Opava - IT2 - PVY</p>
+        </footer>
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="js/rectangle.js"></script>
+        <script src="js/circle.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/triangle.js"></script>
+    </body>
+</html>
