@@ -1,0 +1,21 @@
+.abc{
+    font-size: 20pt;
+    font-style: underline;
+    color: black;
+}
+td{
+    border: solid 1px black;
+    width: 20px;
+    padding: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+#warn{
+    color: red;
+    font-size: 16pt;
+    text-align: center;
+}
+#game{
+    font-size: 16pt;
+    font-style: bold;
+}
