@@ -1,4 +1,4 @@
-var words = ["OPAVA", "STROJ", "MASOPUST", "WINDOWS", "LINUX", "VELIKOST", "PALO", "VISUAL", "STUDIO", "MICROSOFT", "PRAHA", "VLTAVA", "EXPLOZE"];
+var words = ["OPAVA", "STROJ", "MASOPUST", "WINDOWS", "LINUX", "VELIKOST", "VISUAL", "STUDIO", "MICROSOFT", "PRAHA", "VLTAVA", "EXPLOZE"];
 var chosen = Math.floor(Math.random() * words.length);
 var wrong = 0;
 var correct = 0;
@@ -22,7 +22,7 @@ function fillAlphabet(word){
 }
 
 function complete(){
-    document.getElementById('message').innerHTML = '<b>DOKONČENO!</b> <br> Hru jsi zvládl na '+tries+'. pokus, z toho bylo špatně '+wrong+' pokusů.';
+    document.getElementById('message').innerHTML = '<b>DOKONČENO!</b> <br> Hru jsi zvládl na '+(++tries)+'. pokus, z toho bylo špatně '+wrong+' pokusů.';
     document.getElementById('alphabet').innerHTML = ' ';
     return;
 }
