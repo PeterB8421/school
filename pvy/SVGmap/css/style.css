@@ -13,3 +13,7 @@ h1{
     text-align: left;
     padding-left: 10px;
 }
+img{
+    width: 200px;
+    border: black solid 5px;
+}

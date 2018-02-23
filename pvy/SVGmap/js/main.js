@@ -17,6 +17,12 @@ function findJSONObject(data, attr, value) {
     for (var key in obj) {
       /* Jestliže pro daný klíč existuje hodnota... */  
       if (obj.hasOwnProperty(key)) {
+        if(key == "nazev")
+          continue;
+        if(key == "vlajka"){
+          result += '<img alt="'+obj.nazev+'" src="'+obj.vlajka+'">';
+          continue;
+        }
         /* ...výsledný seznam se rozšíří o označení klíče a hodnotu, na kterou v objektu klíč ukazuje */  
         result += "<li>" + key + ": <b>" + obj[key] + "</b></li>";
       }
