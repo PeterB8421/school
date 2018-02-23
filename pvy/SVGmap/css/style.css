@@ -1,0 +1,15 @@
+h1{
+    text-align: center;
+}
+#svg{
+    margin-left: 500px; 
+    float: left;
+    border-right: 2px solid gray;
+    padding-right: 20px;
+}
+#country-data{
+    float: left;
+    margin-right: 200px;
+    text-align: left;
+    padding-left: 10px;
+}
