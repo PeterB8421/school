@@ -17,3 +17,7 @@ img{
     width: 200px;
     border: black solid 5px;
 }
+footer{
+    float: none;
+    text-align: center;
+}

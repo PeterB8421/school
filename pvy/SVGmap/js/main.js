@@ -47,8 +47,16 @@ var active;
         }
       })
       $("path").on("mouseenter", function(){
+        var obj = findJSONObject(data,"zkratka",$(this).attr("id").split("-")[0]);
+        var rect = $(this)[0].getBBox();
         $("path").css({"fill":"#c0c0c0","stroke":"white","stroke-width":"0.5"});
-        $(this).css({"fill":"yellow","stroke":"gray","stroke-width":"2"})
+        if(obj !== undefined){
+          $("pattern #"+$(this).attr("id")).attr({"x":rect.x,"y":rect.y,"width":rect.width,"height":rect.height});
+          $("image").attr("xlink:href",obj.vlajka);
+          console.log($("image").attr("xlink:href"));
+          $("pattern").css({"transform":"translate("+rect.x+","+rect.y+")"});
+          $(this).css({"fill":"url("+obj.vlajka+")","stroke":"gray","stroke-width":"2"});
+        }
         $(this).parent().append($(this));
         $(active).css({"fill":"red","stroke":"black","stroke-width":"2"});
       })
