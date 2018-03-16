@@ -1,0 +1,14 @@
+#zbozi {
+    min-height: 200px;
+}
+
+article {
+    background-color: #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid gray;
+}
+
+article .obsah {
+    display: none;
+}

@@ -1,0 +1,14 @@
+article{
+    border: 1px solid black;
+    background-color: #d7d7d7;
+    padding: 10px;
+}
+article:hover{
+    background-color: yellow;
+}
+img{
+    width: 75px;
+}
+#selectable .ui-selected{
+    background-color: orange;
+}

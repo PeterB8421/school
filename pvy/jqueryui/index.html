@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JQueryUI</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="jumbotron">
+        <h1 class="text-center">JQueryUI</h1>
+    </header>
+    <main class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Knihy</h2>
+                <div id="nabidka">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2>Košík</h2>
+                <div id="objednavka">
+                    <ul>
+                        <li>
+                            <a href="#zbozi">Zboží</a>
+                        </li>
+                        <li>
+                            <a href="#zakaznik">Zákazník</a>
+                        </li>
+                        <li>
+                            <a href="#doprava">Doprava</a>
+                        </li>
+                    </ul>
+                    <div id="zbozi">
+                    </div>
+                    <div id="zakaznik">
+                        <p>Informace o zákazníkovi</p>
+                    </div>
+                    <div id="doprava">
+                        <p>Údaje k dopravě</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <hr>
+        <p>&copy; 2018 - IT2</p>
+    </footer>
+
+    <div id="dialog" title="Basic dialog">
+            <p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="data/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
