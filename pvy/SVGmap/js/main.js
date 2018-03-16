@@ -51,11 +51,23 @@ var active;
         var rect = $(this)[0].getBBox();
         $("path").css({"fill":"#c0c0c0","stroke":"white","stroke-width":"0.5"});
         if(obj !== undefined){
-          $("pattern #"+$(this).attr("id")).attr({"x":rect.x,"y":rect.y,"width":rect.width,"height":rect.height});
+          
+          $("image").attr("x",rect.x);
+          $("image").attr("y",rect.y);
+          console.log("Before");
+          console.log("X:"+$("image").attr("x"));
+          console.log("Y:"+$("image").attr("y"));
+          $("image").attr("width",rect.width);
+          $("image").attr("height",rect.height);
           $("image").attr("xlink:href",obj.vlajka);
-          console.log($("image").attr("xlink:href"));
-          $("pattern").css({"transform":"translate("+rect.x+","+rect.y+")"});
-          $(this).css({"fill":"url("+obj.vlajka+")","stroke":"gray","stroke-width":"2"});
+          $("image").css({"transform":"translate("+rect.x+","+rect.y+")"});
+          console.log("");
+          console.log("After");
+          console.log("X:"+$("image").attr("x"));
+          console.log("Y:"+$("image").attr("y"));
+          console.log("");
+          console.log("");
+          $(this).attr("style",{"fill": $("image") ,"stroke":"gray","stroke-width":"2"});
         }
         $(this).parent().append($(this));
         $(active).css({"fill":"red","stroke":"black","stroke-width":"2"});
