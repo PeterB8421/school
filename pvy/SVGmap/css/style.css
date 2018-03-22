@@ -1,5 +1,14 @@
 h1{
     text-align: center;
+    background: radial-gradient(black,blue);
+    color: white;
+    margin-top: -10px;
+    margin-left: -20px;
+    margin-right: -8px;
+}
+html{
+    font-family: 'Mina', sans-serif;
+    background: linear-gradient(white, #ddd);
 }
 #svg{
     margin-left: 500px; 
