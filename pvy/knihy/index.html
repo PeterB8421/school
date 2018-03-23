@@ -49,12 +49,48 @@
                     <div id="zbozi">
                     </div>
                     <div id="zakaznik">
-                        <p>Informace o zákazníkovi</p>
+
+                        <form action="" method="POST" role="form">
+                            <legend>Údaje o zákazníkovi</legend>
+
+                            <div class="form-group">
+                                <label for="name">Jméno a příjmení</label>
+                                <input type="text" class="form-control" id="name" placeholder="Jméno Příjmení">
+
+                            </div>
+                            <div class="form-group">
+                                <label for="date">Datum narození</label>
+                                <input type="text" class="form-control" id="date">
+                            </div>
+                            <div class="form-group">
+                                <label for="sex">Pohlaví</label>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="sex" id="man" value="muž" checked="checked">
+                                        Muž
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="sex" id="woman" value="žena">
+                                        Žena
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="street">Ulice a ČP</label>
+                                <input type="text" class="form-control" id="street" placeholder="Zadej ulici a číslo popisné">
+                            </div>
+                            <div class="form-group">
+                                <label for="city">Obec / Město</label>
+                                <input type="text" class="form-control" id="city" placeholder="Vyhledej své město / obec">
+                            </div>
+                        </form>
+
                     </div>
                     <div id="doprava">
                         <p>Údaje k dopravě</p>
                     </div>
                 </div>
+                <p> <button id="summary" class="btn btn-info">Souhrn</button> </p>
             </div>
         </div>
 
@@ -65,7 +101,8 @@
     </footer>
 
     <div id="dialog" title="Basic dialog">
-            <p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+        <p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and
+            closed with the 'x' icon.</p>
     </div>
 
     <!-- jQuery -->

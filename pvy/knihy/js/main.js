@@ -18,7 +18,7 @@ function listBooks(data) {
       knihy += '<p>' + kniha.autor + '</p>';
       knihy += '<h4>' + kniha.titul + '</h4>';
       knihy += '<p>Počet stran: ' + kniha.stran + '</p>';
-      knihy += '<p>Cena: ' + kniha.cena + ' Kč</p>';
+      knihy += '<p>Cena: <b class="cena">' + kniha.cena + '</b> Kč</p>';
       knihy += '<p class="obsah">' + kniha.obsah + '</p>';
       knihy += '</div>';
       knihy += '</article>';
@@ -72,5 +72,70 @@ $(function() {
     helper: 'clone'
   });
   //$( "#zbozi" ).disableSelection();
-
+  $.datepicker.regional['cs'] = { 
+    closeText: 'Cerrar', 
+    prevText: 'Předchozí', 
+    nextText: 'Další', 
+    currentText: 'Hoy', 
+    monthNames: ['Leden','Únor','Březen','Duben','Květen','Červen', 'Červenec','Srpen','Září','Říjen','Listopad','Prosinec'],
+    monthNamesShort: ['Le','Ún','Bř','Du','Kv','Čn', 'Čc','Sr','Zá','Ří','Li','Pr'], 
+    dayNames: ['Neděle','Pondělí','Úterý','Středa','Čtvrtek','Pátek','Sobota'], 
+    dayNamesShort: ['Ne','Po','Út','St','Čt','Pá','So',], 
+    dayNamesMin: ['Ne','Po','Út','St','Čt','Pá','So'], 
+    weekHeader: 'Sm', 
+    dateFormat: 'dd.mm.yy', 
+    firstDay: 1, 
+    isRTL: false, 
+    showMonthAfterYear: false, 
+    yearSuffix: ''}; 
+    $.datepicker.setDefaults($.datepicker.regional['cs']);
+  $( "#date" ).datepicker();
+  $( "[name=sex]" ).checkboxradio({
+    icon: false
+  });
+  var cities = [
+    "Opava",
+    "Velké Hoštice",
+    "Háj ve Slezsku",
+    "Kobeřice",
+    "Stěbořice",
+    "Hradec nad Moravicí",
+    "Bolatice",
+    "Odry",
+    "Dolní Životice",
+    "Litultovice",
+    "Ostrava",
+    "Praha",
+    "Brno",
+    "Otice",
+    "Horní Benešov",
+    "Olomouc",
+    "Kojetín",
+    "Plzeň",
+  ];
+  $( "#city" ).autocomplete({
+    source: cities.sort()
+  });
+  $("#summary").on('click',function(){
+    var zakaznik = {
+      jmeno: $("#name").val(),
+      narozeni: $("#date").val(),
+      pohlavi: $("#sex").val(),
+      ulice: $("#street").val(),
+      mesto: $("#city").val(),
+    };
+    var knihy = [];
+    $("#zbozi").children("article").each(function(key,obj){
+      var kniha = {
+        titul: $(obj).find("h4").text(),
+        cena: $(obj).find(".cena").text()
+      }
+      knihy.push(kniha);
+    })
+    var objednavka = {
+      zakaznik: zakaznik,
+      knihy: knihy
+    }
+    console.log(objednavka);
+  })
 });
