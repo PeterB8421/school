@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Praha</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="lightbox/css/lightbox.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    <link rel="stylesheet" href="css/styly.css">
+</head>
+
+<body>
+    <!-- Navigace -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="img/praha-logo.png" alt="Logo">
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#informace">Informace</a>
+                </li>
+                <li>
+                    <a href="#mapa">Mapa</a>
+                </li>
+                <li>
+                    <a href="#pamatky">Památky</a>
+                </li>
+                <li>
+                    <a href="#akce">Akce</a>
+                </li>
+                <li>
+                    <a href="#galerie">Galerie</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Odkazy
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="https://cs.wikipedia.org/wiki/Praha" target="_blank">Praha - Wikipedie</a>
+                        </li>
+                        <li>
+                            <a href="http://www.praha.cz/" target="_blank">Praha.cz</a>
+                        </li>
+                        <li>
+                            <a href="http://www.praha.eu" target="_blank">Magistrát HMP</a>
+                        </li>
+                        <li>
+                            <a href="https://www.hrad.cz/" target="_blank">Pražský hrad</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </nav>
+
+    <!-- Záhlaví stránky -->
+    <header>
+        <!-- Název stránky, podtitul -->
+        <div class="jumbotron">
+            <h1 class="text-center">Praha stověžatá
+                <br>
+                <small>Pozvánka do hlavního města</small>
+            </h1>
+        </div>
+        <!-- Carousel -->
+        <div id="carousel-id" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-id" data-slide-to="0" class=""></li>
+                <li data-target="#carousel-id" data-slide-to="1" class=""></li>
+                <li data-target="#carousel-id" data-slide-to="2" class="active"></li>
+            </ol>
+            <div class="carousel-inner text-center">
+                <div class="item">
+                    <img src="img/banner/banner1.jpg" alt="Staré Město">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Staré Město</h1>
+                            <p>
+                                <i>Staré Město pražské</i>, latinsky
+                                <i>Antiqua civitas Pragensis</i>, německy
+                                <i>Altstadt</i> je historické město, městská čtvrť a katastrální území Prahy na pravém břehu
+                                Vltavy.
+                            </p>
+                            <p>
+                                <a class="btn btn-lg btn-primary" href="https://cs.wikipedia.org/wiki/Star%C3%A9_M%C4%9Bsto_(Praha)" role="button">Čtěte dále</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/banner/banner2.jpg" alt="Žižkovský vysílač">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Žižkovský vysílač</h1>
+                            <p>Žižkovský vysílač je jednou z pražských dominant a současně nejvyšší stavbou (216 m) ve městě,
+                                obsahuje tedy i nejvyšší stabilní bod ve městě – kótu 474 m n. m. Leží na rozhraní Žižkova
+                                a Vinohrad, v oblasti Mahlerových sadů. Byla postavena v letech 1985 až 1992 Inženýrskými
+                                a průmyslovými stavbami Ostrava podle návrhu architekta Václava Aulického, statika Jiřího
+                                Kozáka a Alexe Béma.</p>
+                            <p>
+                                <a class="btn btn-lg btn-primary" href="https://cs.wikipedia.org/wiki/%C5%BDi%C5%BEkovsk%C3%BD_vys%C3%ADla%C4%8D" role="button">Čtěte dále</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item active">
+                    <img src="img/banner/banner3.jpg" alt="Pražský hrad">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Pražský hrad</h1>
+                            <p>Pražský hrad je nejvýznamnější český hrad (původně raně středověké hradiště) stojící na skalnatém
+                                ostrohu nad řekou Vltavou v centru Prahy, na vrchu Opyš. Od 9. století býval sídlem českých
+                                knížat, později králů a od roku 1918 je sídlem prezidenta republiky. Dvakrát v dějinách se
+                                stal hlavní rezidencí císaře Svaté říše římské.</p>
+                            <p>
+                                <a class="btn btn-lg btn-primary" href="https://cs.wikipedia.org/wiki/Pra%C5%BEsk%C3%BD_hrad" role="button">Čtěte dále</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#carousel-id" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel-id" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+    </header>
+    <!-- Hlavní obsahová část stránky -->
+    <main class="container">
+        <!-- Informace o Praze -->
+        <section id="informace">
+            <h2 class="well text-center">
+                <i class="fas fa-info-circle"></i> Základní informace</h2>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <h3>Důležité údaje</h3>
+                    <ul>
+                        <li>Počet obyvatel:
+                            <b>1 280 508</b>
+                        </li>
+                        <li>Katastrální výměra:
+                            <b>496 km
+                                <sup>2</sup>
+                            </b>
+                        </li>
+                        <li>Hustota zalidnění:
+                            <b>2581,7 obyvatel/km
+                                <sup>2</sup>
+                            </b>
+                        </li>
+                        <li>Rozpočtové výdaje:
+                            <b>60 991 mil. Kč</b>
+                        </li>
+                        <li>Nadmořská výška:
+                            <b>177–399 m n. m.</b>
+                        </li>
+                        <li>Primátor:
+                            <b>Adriana Krnáčová (ANO)</b>
+                        </li>
+                    </ul>
+                    <hr>
+                    <h3>Původ názvu "Praha"</h3>
+                    <p>Název města se běžně odvozuje od slova
+                        <em>práh</em>. Podle této nejuznávanější teorie je Praha pojmenována po říčním prahu, tj. brodu,
+                        který se nacházel někde pod dnešním Karlovým mostem. Přes tento brod přecházeli lidé přes řeku. Protože
+                        se město začalo rozrůstat právě nad tímto brodem, tedy prahem v řece, bylo nazváno Praha.</p>
+                    <hr>
+                    <h3>Přívlastky</h3>
+                    <ul>
+                        <li>Přívlastek
+                            <em>Praga Caput Regni</em> (
+                            <mark>Praha hlava království</mark>) byl používán od středověku, v roce 1518 byl vyznačen na Staroměstské
+                            radnici.
+                        </li>
+                        <li>Od roku 1927 byl součástí znaku Prahy přívlastek
+                            <mark>Praha matka měst</mark> (latinsky
+                            <em>Praga mater urbium</em>).</li>
+                        <li>Od roku 1991 je pak součástí znaku přívlastek
+                            <em>Praga Caput Rei publicae</em> (
+                            <mark>Praha hlava republiky</mark>).</li>
+                        <li>Přívlastek
+                            <mark>Praha stověžatá</mark> zřejmě poprvé použil historik
+                            <strong>Josef Hormayer</strong> počátkem 19. století, tou dobou tyto věže spočítal matematik
+                            a filozof
+                            <strong>Bernard Bolzano</strong> a dospěl k číslu 103 (bez vodáren a soukromých domů).</li>
+                    </ul>
+                    <hr>
+                    <blockquote class="blockquote">
+                        <p class="mb-0">Praha je úžasné město, jako z jiného století, jako z jiného světa. Nikdy jsem neviděl nic fantastičtějšího.</p>
+                        <p class="text-right">
+                            <big>Lou Reed</big>
+                        </p>
+                    </blockquote>
+                </div>
+                <div class="col-xs12- col-sm-12 col-md-6 col-lg-6">
+                    <h3>Historické mezníky</h3>
+                    <dl>
+                        <dt>8. století</dt>
+                        <dd>Podle legendy byla Praha založena českou kněžnou a věštkyní Libuší a jejím manželem Přemyslem, zakladatelem
+                            dynastie Přemyslovců.</dd>
+                        <dt>10. století</dt>
+                        <dd>Položeny základy Pražského hradu.</dd>
+                        <dt>14. století</dt>
+                        <dd>Karel IV. založil univerzitu a Nové Město pražské, Praha se stala centrem Svaté říše římské.</dd>
+                        <dt>15. století</dt>
+                        <dd>V Betlémské kapli káže Jan Hus, první pražská defenestrace se stává začátkem husitské revoluce.</dd>
+                        <dt>16. století</dt>
+                        <dd>Rozvoj umění v době panování císaře Rudolfa II., kdy se Praha opět stala hlavním městem říše.</dd>
+                        <dt>17. století</dt>
+                        <dd>V průběhu třicetileté války a době pobělohorské Praha poklesla na úroveň provinčního města, kde panovník
+                            sídlí jen výjimečně. Současně však přichází nový, barokní sloh, který ve své vrcholné zdomácnělé
+                            podobě proměnil tvář města a obohatil jej o řadu charakteristických památek.</dd>
+                        <dt>18. století</dt>
+                        <dd>Původní čtyři samostatná historická města byla roku spojena do královského hlavního města Prahy.</dd>
+                        <dt>19. století</dt>
+                        <dd>Průmyslová revoluce se výrazně projevila r. 1845 prvním nádražím propojující město dráhou s Vídní.
+                            V druhé polovině století došlo k prudkému rozvoji pražského osídlení, nově se stavěly nájemní
+                            domy, továrny, mosty, kulturní stavby (Národní divadlo), městské vybavení (regulace nábřeží,
+                            dláždění, kanalizace, osvětlení).</dd>
+                        <dt>20. století</dt>
+                        <dd>Po vzniku republiky byly v roce 1922 obce v rozsáhlém okruhu historického centra spojeny do tzv.
+                            Velké Prahy. Po druhé světové válce se za vlády komunistické strany se přechází na plánovanou
+                            výstavbu zejména sídlišť, ale dochází také k rozvoji dopravy včetně výstavby metra a systematičtější
+                            ochraně památek. V několika vlnách se také město rozšiřovalo o nové okrajové části. Po roce 1989
+                            bylo zapsáno historické centrum na seznam památek UNESCO a dochází k rekonstrukcím a obnově z
+                            větší části zanedbaných budov.</dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mapa -->
+        <section id="mapa">
+            <h2 class="well text-center">
+                <i class="fas fa-map"></i> Mapa centra hlavního města</h2>
+            <div class="row">
+                <div class="col-xs-12">
+                    <svg width="1139" height="602" version="1.1" viewBox="0 0 1139 602" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <image width="1139" height="602" preserveAspectRatio="none" xlink:href="img/mapa-prahy.jpg" />
+                        <g stroke-width="7.6">
+                            <circle cx="334" cy="119" r="7.5" img="img/gallery/prazsky-hrad-small.jpg" />
+                            <circle cx="471" cy="184" r="7.5" img="img/gallery/karluv-most-small.jpg" />
+                            <circle cx="579" cy="190" r="7.5" img="img/gallery/stare-mesto-small.jpg" />
+                            <circle cx="926" cy="344" r="7.5" img="img/gallery/chram-nejsvetejsiho-srdce-pane-small.jpg" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div id="pamatka">
+                <img src="img/gallery/staromestske-namesti-small.jpg" alt="Stroměstské náměstí" width="300px">
+            </div>
+        </section>
+
+        <!-- Památky -->
+        <section id="pamatky">
+            <h2 class="well text-center">
+                <i class="fas fa-university"></i> Památky v Praze</h2>
+            <div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <article class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Pražský hrad - katedrála sv. Víta</h3>
+                            </div>
+                            <div class="panel-body">
+                                <figure>
+                                    <img src="img/gallery/prazsky-hrad-small.jpg" class="img-responsive img-rounded" alt="Pražský hrad - katedrála sv. Víta">
+                                    <figcaption>Pražský hrad - katedrála sv. Víta</figcaption>
+                                </figure>
+                                <p>Při příležitosti povýšení pražského biskupství na arcibiskupství položil roku 1344 Karel
+                                    IV. základní kámen katedrály sv. Víta. Stavba byla dokončena až v září 1929. Katedrála
+                                    neslouží pouze náboženským účelům, ale také jako mauzoleum českých králů, pokladnice
+                                    korunovačních klenotů nebo jako galerie soch a portrétů.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6">
+                        <article class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Karlův most</h3>
+                            </div>
+                            <div class="panel-body">
+                                <figure>
+                                    <img src="img/gallery/karluv-most-small.jpg" class="img-responsive img-rounded" alt="Karlův most">
+                                    <figcaption>Karlův most od Prašné brány</figcaption>
+                                </figure>
+                                <p>Karlův most je druhým nejstarším kamenným mostem v České republice a zároveň nejstarším stojícím
+                                    mostem přes řeku Vltavu. Se stavbou mostu se začalo v roce 1357 za vlády Karla IV. a
+                                    dokončen byl v roce 1402. Až do roku 1841 byl jediným mostem přes Vltavu v Praze. Most
+                                    lemuje na třicet soch a sousoší v převážně barokním stylu.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <article class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Staroměstské náměstí</h3>
+                            </div>
+                            <div class="panel-body">
+                                <figure>
+                                    <img src="img/gallery/staromestske-namesti-small.jpg" class="img-responsive img-rounded" alt="Staroměstské náměstí">
+                                    <figcaption>Staroměstské náměstí a Týnský chrám</figcaption>
+                                </figure>
+                                <p>Staroměstské náměstí se rozkládá v centru Starého Města. Dříve se mu říkalo Velké náměstí.
+                                    Už ve středověku se zde konaly trhy, díky kterým se z Prahy stala metropole, jak ji známe.
+                                    Bylo svědkem řady historicky významných událostí, jako třeba popravy dvaceti sedmi českých
+                                    pánů v roce 1621 nebo vzpoury po popravě Jana Želivského.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6">
+                        <article class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Kostel Nejsvětějšího srdce Páně</h3>
+                            </div>
+                            <div class="panel-body">
+                                <figure>
+                                    <img src="img\gallery\chram-nejsvetejsiho-srdce-pane-small.jpg" class="img-responsive img-rounded" alt="Kostel Nejsvětějšího srdce Páně">
+                                    <figcaption>Kostel Nejsvětějšího srdce Páně</figcaption>
+                                </figure>
+                                <p>Monumentální moderní stavba v Praze na Vinohradech od známého slovinského architekta Jože
+                                    Plečnika, která byla realizována v letech 1928 až 1932 formou režného zdiva. Je inspirována
+                                    Noemovou archou, obsahuje detaily s královskou symbolikou. Má širokou hlavní věž vysokou
+                                    42 metrů s rozměrnými kulatými hodinami. V roce 2010 byl kostel zařazen mezi národní
+                                    kulturní památky.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="modal fade" tabindex="-1" role="dialog" id="modal">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h4 class="modal-title">Modal title</h4>
+                            </div>
+                            <div class="modal-body">
+                              <p>One fine body&hellip;</p>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Zavřít</button>
+                            </div>
+                          </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                      </div><!-- /.modal -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Kalendář akcí -->
+        <section id="akce">
+            <h2 class="well text-center">
+                <i class="far fa-calendar-check"></i> Kalendář akcí</h2>
+            <div class="row">
+                <div class="col-xs-12">
+                    
+                    <table class="table table-hover" id="tab-akce">
+                        <thead>
+                            <tr>
+                                <th>Datum</th>
+                                <th>Název akce</th>
+                                <th>Místo konání</th>
+                                <th>Vstupné</th>
+                                <th>Popis</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Galerie -->
+        <section id="galerie">
+            <h2 class="well text-center">
+                <i class="far fa-images"></i> Fotogalerie</h2>
+            <div class="row">
+                Tady bude fotogalerie s využitím Lightboxu
+            </div>
+        </section>
+
+    </main>
+    <!-- Zápatí stránky - informace o autorovi -->
+    <footer class="text-center">
+        <hr>
+        <p>&copy; 2018 - Střední škola průmyslová a umělecká v Opavě</p>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="data/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

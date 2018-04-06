@@ -1,0 +1,10 @@
+WARNING: Could not open file 'C:\data\tgm\web-ukol\img\mapa-prahy.jpg' for embedding. The raster image will be kept as a reference but might be invalid. (Exception details: <urlopen error unknown url type: c>)
+<svg width="1139" height="602" version="1.1" viewBox="0 0 1139 602" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <image width="1139" height="602" preserveAspectRatio="none" xlink:href="C:\data\tgm\web-ukol\img\mapa-prahy.jpg"/>
+ <g stroke-width="7.6">
+  <ellipse cx="334" cy="119" rx="8.3" ry="7.9"/>
+  <ellipse cx="471" cy="184" rx="7.5" ry="7.9"/>
+  <ellipse cx="579" cy="190" rx="7.5" ry="8.3"/>
+  <circle cx="926" cy="344" r="7.5"/>
+ </g>
+</svg>
