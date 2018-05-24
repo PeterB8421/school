@@ -34,7 +34,13 @@
                         <label for="r" class="r">Red</label>
                     </div>
                     <div class="col-xs-2">
-                        <input type="number" name="r" class="r" value="<?php echo $r?>" class="form-control"step="5" min="0" max="255">
+                        <input type="number" name="r" class="r" value="<?php echo $r?>" class="form-control"step="1" min="0" max="255">
+                        <?php 
+                            if(!preg_match("/^(\d{1,2}|1\d{1,2}|2[0-4]\d|25[0-5])$/",$r)){
+                                $r = 0;
+                                echo "<b class=\"text-danger\">Zadána neplatná hodnota, automaticky nastaveno na hodnotu 0!</b>";
+                            }
+                        ?>
                     </div>
                 </div>
                 <div class="form-group">
@@ -42,7 +48,13 @@
                         <label for="g" class="g">Green</label>
                     </div>
                     <div class="col-xs-2">
-                        <input type="number" name="g" class="g" value="<?php echo $g?>" class="form-control"step="5" min="0" max="255">
+                        <input type="number" name="g" class="g" value="<?php echo $g?>" class="form-control"step="1" min="0" max="255">
+                        <?php 
+                            if(!preg_match("/^(\d{1,2}|1\d{1,2}|2[0-4]\d|25[0-5])$/",$g)){
+                                $g = 0;
+                                echo "<b class=\"text-danger\">Zadána neplatná hodnota, automaticky nastaveno na hodnotu 0!</b>";
+                            }
+                        ?>
                     </div>
                 </div>                
                 <div class="form-group">
@@ -50,7 +62,13 @@
                         <label for="b" class="b">Blue</label>
                     </div>
                     <div class="col-xs-2">
-                        <input type="number" name="b" class="b" value="<?php echo $b?>" class="form-control"step="5" min="0" max="255">
+                        <input type="number" name="b" class="b" value="<?php echo $b?>" class="form-control"step="1" min="0" max="255">
+                        <?php 
+                            if(!preg_match("/^(\d{1,2}|1\d{1,2}|2[0-4]\d|25[0-5])$/",$b)){
+                                $b = 0;
+                                echo "<b class=\"text-danger\">Zadána neplatná hodnota, automaticky nastaveno na hodnotu 0!</b>";
+                            }
+                        ?>
                     </div>
                 </div>
                 <div class="form-group">
@@ -70,14 +88,15 @@
             $green = rand($g,255);
             $blue = rand($b,255);
         ?>
-        <div class="col-xs-12 col-sm-6" id="text" style="<?php echo "color: rgb($red,$green,$blue);"?>">
-            <h2>Barva textu</h2>
+        <h2>Ukázka barevné kombinace</h2>
+        <div class="col-xs-12 col-sm-6" id="text" style="<?php echo "color: rgb($red,$green,$blue);"?>">    
+            <h3>Barva textu</h3>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque at, ab animi deleniti veritatis ad nulla atque necessitatibus. Commodi sequi alias perferendis explicabo eum, veniam dicta? Porro doloribus laboriosam molestias.
             </p>
         </div>
         <div class="col-xs-12 col-sm-6" id="pozadi" style="<?php echo "background-color: rgb($red,$green,$blue);"?>">
-            <h2>Barva pozadí</h2>
+            <h3>Barva pozadí</h3>
             <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam ea quas officiis placeat est sint molestias cumque provident id nesciunt optio, sit quasi modi autem tenetur, nisi asperiores ut quisquam?
             </p>
